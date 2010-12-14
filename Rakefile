@@ -13,10 +13,10 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "webgl"
-  gem.homepage = "http://github.com/sinisterchipmunk/webgl"
+  gem.homepage = "http://thoughtsincomputation.com"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{A WebGL framework for Rails.}
+  gem.description = %Q{A WebGL framework for Rails.}
   gem.email = "sinisterchipmunk@gmail.com"
   gem.authors = ["Colin MacKenzie IV"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
@@ -48,3 +48,6 @@ Rake::RDocTask.new do |rdoc|
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
+
+require 'jasmine'
+load 'jasmine/tasks/jasmine.rake'

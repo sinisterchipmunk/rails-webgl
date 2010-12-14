@@ -1,7 +1,17 @@
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
+
 require 'rspec'
-require 'webgl'
+require 'rails-webgl'
+require 'genspec'
+require 'rails/application'
+require 'action_controller/railtie'
+
+class WebGLMock < Rails::Application
+  config.active_support.deprecation = :stderr
+end
+
+WebGLMock.initialize!
 
 # Requires supporting files with custom matchers and macros, etc,
 # in ./support/ and its subdirectories.

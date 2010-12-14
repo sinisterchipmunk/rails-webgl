@@ -1,4 +1,4 @@
-= webgl
+= rails-webgl
 
 A WebGL framework for Rails. This is the _official_ project spawned from my Rails-based demos, which you can read more
 about at http://github.com/sinisterchipmunk/webgl.

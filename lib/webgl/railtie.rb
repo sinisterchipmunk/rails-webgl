@@ -13,7 +13,7 @@ module WebGL
     end
     
     config.before_configuration do
-      config.action_view.javascript_expansions[:webgl] = Dir[File.join(WebGL.public_path, "javascripts/**/*.js")].collect { |d| File.join("", d.gsub(Regexp::escape(WebGL.public_path), "")) }
+      config.action_view.javascript_expansions[:webgl] = Dir[File.join(WebGL.public_path, "javascripts/**/*.js")].collect { |d| File.join("", d.gsub(/^#{Regexp::escape(WebGL.public_path)}/, "")) }
     end
     
 #    generators do

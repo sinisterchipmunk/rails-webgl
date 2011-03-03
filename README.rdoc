@@ -6,6 +6,27 @@ about at http://github.com/sinisterchipmunk/webgl.
 And so far, that's about all there is to say about this project. Check back soon when I have something you can actually
 use.
 
+== Installation
+
+Be aware that this gem is designed for Rails 3 applications. I have no idea whether it works as expected with Rails 2,
+and have no intention of finding out.
+
+To install, simply add rails-webgl to your Gemfile:
+
+  gem 'rails-webgl'
+  
+== Usage
+
+The simplest usage of this gem is to simply include the WebGL JavaScripts into your application layout:
+
+  <%=javascript_include_tag :webgl%>
+
+At this point, you're totally ready to start using the JavaScript portion of this framework. See the
+TODO JavaScript API documentation
+for more information on that.
+
+TODO To make the most of the Ruby portion of this framework, you need to ...
+
 == Contributing to webgl
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet

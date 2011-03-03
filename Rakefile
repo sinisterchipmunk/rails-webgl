@@ -49,5 +49,13 @@ Rake::RDocTask.new do |rdoc|
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
 
+
+namespace :mock do
+  require File.expand_path('../spec/spec_helper', __FILE__)
+  require 'rake'
+
+  WebGL::MockApplication.load_tasks
+end
+
 require 'jasmine'
 load 'jasmine/tasks/jasmine.rake'

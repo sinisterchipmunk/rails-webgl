@@ -13,7 +13,34 @@ module WebGL
     end
     
     config.before_configuration do
-      config.action_view.javascript_expansions[:webgl] = Dir[File.join(WebGL.public_path, "javascripts/**/*.js")].collect { |d| File.join("", d.gsub(/^#{Regexp::escape(WebGL.public_path)}/, "")) }
+      config.action_view.javascript_expansions[:webgl] = %w(
+        sylvester
+        sylvester-ext
+        gl-utils
+        webgl
+        engine/core
+        engine/assertions
+        engine/vector
+        engine/plane
+        engine/frustum
+        engine/camera
+        objects/renderable
+        systems/particle_system
+        systems/particle_manager
+        engine/shader
+        engine/world
+        engine/context
+        engine/buffer
+        engine/texture
+        engine/mesh
+        engine/text
+        culling/octree
+        objects/quad
+        engine/video_texture
+        engine/canvas_texture
+        control/mouse_weight  
+        control/keycodes
+      )
     end
     
 #    generators do

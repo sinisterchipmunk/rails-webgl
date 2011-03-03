@@ -15,7 +15,7 @@ require 'spec_helper'
 
 describe "webgl_tests/webgl_inclusion.html.erb" do
   def src_for(str)
-    File.expand_path(File.join(File.dirname(__FILE__), '../../public/javascripts', str))
+    File.expand_path(File.join('/javascripts', str))
   end
   
   it "includes all WebGL javascripts" do

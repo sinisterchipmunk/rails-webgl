@@ -57,5 +57,10 @@ namespace :mock do
   WebGL::MockApplication.load_tasks
 end
 
+task :all do
+  Rake::Task['default'].invoke
+  Rake::Task['jasmine'].invoke
+end
+
 require 'jasmine'
 load 'jasmine/tasks/jasmine.rake'

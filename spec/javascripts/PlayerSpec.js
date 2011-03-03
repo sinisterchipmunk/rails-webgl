@@ -1,3 +1,4 @@
+/*
 describe("Player", function() {
   var player;
   var song;
@@ -56,3 +57,4 @@ describe("Player", function() {
     });
   });
 });
+*/

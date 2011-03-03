@@ -13,7 +13,7 @@ module WebGL
     end
     
     config.before_configuration do
-      config.action_view.javascript_expansions[:webgl] = Dir[File.join(WebGL.public_path, "javascripts/**/*.js")]
+      config.action_view.javascript_expansions[:webgl] = Dir[File.join("javascripts/**/*.js")]
     end
     
 #    generators do

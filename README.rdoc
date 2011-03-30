@@ -1,4 +1,11 @@
+= important
+
+This project has been superceded by {Jax}[http://github.com/sinisterchipmunk/jax], a featureful, Ruby-powered, Rails-like framework designed to rapidly spit out beautiful WebGL applications. Jax is designed to work with Rails out-of-the-box, but of course Rails is not a requirement to use Jax.
+
+If you're interested in developing WebGL-enabled applications, either with or without Rails, you should hop on over to http://github.com/sinisterchipmunk/jax and see what it can do for you.
+
 = rails-webgl
+
 
 A WebGL framework for Rails. This is the _official_ project spawned from my Rails-based demos, which you can read more
 about at http://github.com/sinisterchipmunk/webgl.
